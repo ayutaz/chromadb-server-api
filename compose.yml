@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  chromadb-api:
+    build: .
+    ports:
+      - "8020:5000"
+    volumes:
+      - ./memories.json:/app/memories.json
